@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Resume Generator</title>
+    <!--CSS Foundation-->
+    <link rel="stylesheet" href="css/foundation.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Google custom font-->
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Arvo|Baloo+Bhaina|Baloo+Paaji|Baloo+Thambi|Chewy|Cuprum|Lato|Lobster|Russo+One|Source+Sans+Pro|Ubuntu" rel="stylesheet">
+    <!--Google Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"> 
+     <!--Js PDF-->
+    <script src="https://cdn.jsdelivr.net/jspdf/1.2.61/jspdf.min.js"></script>
+
+</head>
+<body>
+   <!--Mobile Navigation-->
+
+    <div class="off-canvas-wrapper">
+         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+         <div class="off-canvas position-left" id="Mobile-Menu" data-off-canvas>
+            <ul >
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul> 
+         </div>
+   <!--Desktop Navbar-->
+     <div class="off-canvas-content" data-off-canvas-content>
+     <div class="title-bar show-for-small-only">
+  <div class="title-bar-left">
+    <button class="menu-icon" type="button" data-open="Mobile-Menu"></button>
+    <span class="title-bar-title">Resume Generator</span>
+  </div>
+  </div>
+</div>
+    <div class="top-bar nav-desktop chorizontal menu" data-magellan>
+        <div class="wrap">
+            <div class="top-bar-title">
+                <a href="#"><h3 class="site-logo">Resume Generator</h3></a>
+            </div>
+            <div class="top-bar-right">
+                <ul class="menu menu-desktop " >
+                    <li><a href="#home"> Home</a></li>
+                    <li><a href="#about"> About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> 
+            </div>
+        </div>  
+    </div><!--End of Top bar-->
+    <!--Hero Section-->
+    <div class="sections">
+    <div class="hero" id="home" data-magellan-target="home">
+        <div class="wrap">
+            <h1>Make your Resume Stand out in Crowd!!</h1>
+            <h4 class="resume">Create Beautiful and Professional Resume <br>that Employers love</h4>
+            <a href="#more" class="button info bttn">Know More!</a>
+            <a href="#start" class="button success btn">Start Building Resume</a>
+        </div>
+    </div><!--End of Hero-->
+
+    <!--Main Section-->
+    <div class="main" id="about" >
+        <div class="wrap row" id="more">
+           <h2 class="text-center work">How Does it Works ??</h2>
+           <hr>
+            <div class="small-12 large-4 column border ">
+               <h3 class="color">Resume Generator??</h3>
+               <p class="lead">It is an online Resume maker which allows Users to enter details and download resume in minutes !!</p>
+            </div>
+            <div class="small-12 large-4 column border ">
+                 <h3 class="color">Fast & Easy to Use</h3>
+                 <p class="lead">Enter your details in to existing forms and make your Professional Resume in 20 minutes and of course it is an easy to use application.</p>
+            </div>
+            <div class="small-12 large-4 column border">
+                <h3 class="color">Download</h3>
+                <p class="lead">Select Theme and Download Resume either in PDF or in HTML of your choice !</p>
+            </div>
+
+        </div>  
+        <a href="#start" type="button" class="button success butn ">Start Building resume</a>  
+    </div><!--Close of main section-->
+    <!--Form Section using Tabs-->
+    <div class="main design" id="start">
+        <div class="wrap">
+        <h3 class="text-center">Resume Generator</h3>
+        <p class="lead text-center" style="color:red">Caution: Enter all the details in the form  without missing to get the perfect template</p>
+        <hr>
+            <div class="row collapse">
+  <div class="medium-3 columns">
+    <ul class="tabs vertical" id="example-vert-tabs" data-tabs>
+      <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Basic Information</a></li>
+      <li class="tabs-title"><a href="#panel2v">Personal Details</a></li>
+      <li class="tabs-title"><a href="#panel3v">Eduaction</a></li>
+      <li class="tabs-title"><a href="#panel4v">Work Experience</a></li>
+      <li class="tabs-title"><a href="#panel5v">Miscellaneous</a></li>
+      <li class="tabs-title"><a href="#panel6v">Finish</a></li>
+    </ul>
+    </div>
+    <div class="medium-9 columns">
+    <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+      <div class="tabs-panel is-active" id="panel1v">
+            <form id="register" action="register" method="post">
+                <div class="row">
+                    <div class="medium-12 columns">
+                       <label>Objective
+                           <input type="text"  name="object" placeholder="Write down Career Objectives">
+                        </label>
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="medium-6 columns">
+                         <label>Name
+                           <input type="text" id="name" name="name" placeholder="Enter Your Full Name">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>Email 
+                            <input type="text" id="email" name="email" placeholder="Enter Your Mail Address">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-6 columns">
+                         <label>Mobile
+                           <input type="text"  name="mobile" placeholder="Enter Your Mobile Number">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>Website
+                            <input type="text"  name="website" placeholder="Enter If u have any">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-4 columns">
+                         <label>Address 1
+                           <input type="text" name="doorno" placeholder="Door No,Street">
+                        </label>
+                    </div>
+                    <div class="medium-4 columns">
+                        <label>Address 2
+                            <input type="text"  name="city" placeholder="Place,City">
+                        </label>
+                    </div>
+                    <div class="medium-4 columns">
+                        <label>Address 3
+                            <input type="text" name="state" placeholder="State,Pincode">
+                        </label>
+                    </div>
+                </div>
+            </form>    
+        </div>
+      <div class="tabs-panel" id="panel2v">
+          <form id="register" action="register" method="post">  
+               <div class="row">
+                    <div class="medium-6 columns">
+                         <label>Date of Birth
+                           <input type="text" name="birth" placeholder="Date-Month-Year">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>Father's Name
+                            <input type="text" name="father" placeholder="Enter Your Father Name">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-6 columns">
+                         <label>Gender
+                           <input type="text" name="gender" placeholder="ENter Gender">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>Languages Known
+                            <input type="text" name="language" placeholder="Enter languages seperated by ' , '">
+                        </label>
+                    </div>
+                </div>
+            </form>    
+      </div>
+      <div class="tabs-panel" id="panel3v">
+         <form id="register" action="register" method="post">  
+               <div class="row">
+                    <div class="medium-6 columns">
+                         <label>SSC
+                           <input type="text"  name="ssc" placeholder="Enter Your 10th Class with %">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>Institution
+                            <input type="text" name="school" placeholder="Enter Name of school">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-6 columns">
+                         <label>Year of Passing
+                           <input type="text" name="years" placeholder="Enter Year of Passing">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>Board
+                            <input type="text" name="board1" placeholder="Enter Board of Education">
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="medium-6 columns">
+                         <label>PUC
+                           <input type="text" name="puc" placeholder="Enter Your 12th Class marks with %">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>College
+                            <input type="text"  name="college" placeholder="Enter Name of College">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-6 columns">
+                         <label>Year of Passing
+                           <input type="text" name="year" placeholder="Enter Year of Passing">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>Board
+                            <input type="text" name="board2" placeholder="Enter Board of Education">
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="medium-6 columns">
+                         <label>Degree & Stream
+                           <input type="text" name="degree" placeholder="Enter Your Degree and stream">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>Institution Name
+                            <input type="text" name="college2" placeholder="Enter Name of College">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-6 columns">
+                         <label>Percentage 
+                           <input type="text" name="marks" placeholder="Enter Your Percentage">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>Year of Passing
+                            <input type="text" name="year1" placeholder="Enter Year of Passing">
+                        </label>
+                    </div>
+                </div>
+            </form>  
+      </div>
+      <div class="tabs-panel" id="panel4v">
+          <form id="register" action="register" method="post">
+            <div class="row">
+                    <div class="medium-6 columns">
+                         <label>Job Title
+                           <input type="text"  name="job" placeholder="Enter Your Job Title">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>Company
+                            <input type="text" name="company" placeholder="Enter Name of Your Company">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-6 columns">
+                         <label>Start Date
+                           <input type="text"  name="start" placeholder="Start Date">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>End Date
+                            <input type="text" name="end" placeholder="Type '-' if not there">
+                        </label>
+                    </div>
+                </div>
+            </form>    
+      </div>
+      <div class="tabs-panel" id="panel5v">
+           <form id="register" action="register" method="post">
+           <div class="row">
+                    <div class="medium-12 columns">
+                         <label>Project 
+                           <input type="text" name="project" placeholder="Enter Your Project Details in Brief in 25 words">
+                        </label>
+                    </div>
+            </div>
+            <hr>        
+            <div class="row">
+                    <div class="medium-6 columns">
+                         <label>Hobbies  
+                           <input type="text" name="hobbies" placeholder="Enter Hobbies or Interests seperated by ',' ">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>Extracurricular activities
+                            <input type="text"  name="activities" placeholder="Enter other Activities seperated by ' , '">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-6 columns">
+                         <label> Technical Skills
+                           <input type="text" name="technical"  placeholder="Enter 2 techincal skills seperated by ','">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>Inter Personal Skills
+                            <input type="text" name="personal" placeholder="Enter sills seperated by ' , '">
+                        </label>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="medium-6 columns">
+                         <label>Areas of Interest
+                           <input type="text" name="interest"  placeholder="Enter Field of Interest seperated by ','">
+                        </label>
+                    </div>
+                    <div class="medium-6 columns">
+                        <label>Work Shops Attended
+                            <input type="text" name="work" placeholder="Workshops or tech events seperated by ', or .'" >
+                        </label>
+                    </div>
+                </div>
+            </form>   
+      </div>
+      <div class="tabs-panel" id="panel6v">
+        <div class="row">
+             <div class="medium-12 columns text-center">
+                  <h5>Choose Below Templates to download HTML and PDF of Your Resume</h5>
+             </div>
+        </div>
+        <hr>
+       <div class="row">
+             <div class="medium-6 columns ">
+                 <button id="html" type="button" class="button success" onClick="outputname()">Template 1</button> <!--Calling onclick to generate html-->
+             </div>
+             <div class="medium-6 columns">
+                 <button id="submit" type="button" class="button success" onClick="outputname1()">Template 2</button><!--Calling onclick to generate html-->
+             </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+    </div><!--End of main-->
+    <!--Footer-->
+    <footer class="footer">
+        <div class="wrap row small-up-1 medium-up-3">
+            <div class="column">
+                <h4 id="contact">Contact Info</h4>
+            <hr>
+                <a href="#"  class="not-active"><span>Phone : </span>+91-7022654693</a>
+                <a href="#" class="not-active"><span>E-mail : </span>vinay.karanam94@gmail.com</a>
+                <a href="#" class="not-active"><span>Address : </span>#3746,1st floor,<br>
+                6th cross,Subramanya Nagar,Bangalore</a>
+            </div>
+            <div class="column">
+                <h4>Site Map</h4>
+            <hr>
+                <a href="#" id="home">Home</a>
+                <a href="#about" id="about">About</a>
+                <a href="#contact" id="contact">Contact</a>
+            </div>
+            <div class="column">
+                <h4>Social Media</h4>
+                <hr>
+                <a href="https://www.facebook.com/vinaykaranam94" target="_blank">Facebook</a>
+                <a href="https://twitter.com/vinay_karanam94" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/in/vinay-karanam-a4518579?trk=nav_responsive_tab_profile" target="_blank">Linkedin</a>
+                <a href="https://github.com/vinaykumar94" target="_blank">Github</a>
+            </div>
+        </div>
+    </footer>
+    <div class="row text-center copy " >
+
+            <div class="column extended large-12 wrap">
+                <h6 class="navbar navbar-left foot"><strong>&copy; Resume Generator designed and coded by <a href="https://vinaykumar94.github.io/MyFirstWebsite/" target="_blank">vinay</a></strong></h6>
+            </div> 
+        </div>
+    </div>
+    </div>
+    </div>
+    </div><!--Close of offcanvas-->
+    </div>
+
+
+    <!--Foundation Jquery-->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <!--Custom Jquery-->
+    <script src="js/template1.js"></script>
+    <script src="js/template2.js"></script>
+    <!--<script src="js/html.js"></script>-->
+
+</body>
+</html>

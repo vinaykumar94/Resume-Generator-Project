@@ -1,0 +1,262 @@
+/********************************
+Gereral
+*********************************/
+body{
+  font-family: 'Ubuntu',sans-serif;
+}
+a{
+  font-family: "Lato";
+  letter-spacing: 0.1em;
+}
+.wrap{
+  width: 90%;
+  max-width:1024px;
+  margin:0 auto;
+}
+.off-canvas-wrapper{
+  background-color: #222;
+}
+*{
+  outline: none;
+}
+.main{
+  padding: 80px 0px;
+  background-color: #fff;
+  background-image: url("../img/handmadepaper.png");
+  background-color: transparent;
+}
+/********************************
+Navigation-Mobile
+********************************/
+.title-bar{
+  
+  color: white;
+  height: 60px;
+  padding-top: 17px;
+}
+#Mobile-Menu{
+  background-color: #222;
+  padding: 10px;
+
+}
+#Mobile-Menu li{
+  list-style: none;
+}
+#Mobile-Menu a{
+  color: rgba(255,255,255,0.6);
+  font-weight: bold;
+  line-height: 2;
+}
+#Mobile-Menu a:hover{
+  color: rgba(255,255,255,0.8);
+  color: #2199e8;
+}
+.js-off-canvas-exit{
+  background: rgba(0,0,0,0.5);
+}
+.off-canvas{
+  background-color: black;
+}
+
+/********************************
+Navigation-Desktop
+*********************************/
+.nav-desktop{
+  padding:0px;
+  height: 80px;
+  background-image: url("../img/gray_jean.png");
+}
+.site-logo{
+  line-height: 80px;
+  color: #222;
+  font-weight: bold;
+}
+.site-logo:hover{
+  color: #2199e8;
+
+}
+.nav-desktop .menu-desktop{
+  line-height: 80px;
+  background-color: transparent;
+}
+
+.menu > li > a{
+display: inline-block;
+line-height: 80px;
+padding-top: 0px;
+padding-bottom: 0px;
+color: #222;
+text-transform: uppercase;
+font-weight: bold;
+
+}
+.menu > li > a:hover{
+ /*background-color: rgba(255,255,255,1);*/
+ color: #2199e8;
+}
+@media(max-width:639px){
+  .nav-desktop{
+    display: none;
+  }
+
+
+}
+@media all and (max-width:706px) and (min-width:640px){
+  .site-logo{
+    font-size: 1.5em;
+  }
+}
+
+/********************************
+Hero
+*********************************/
+.hero{
+  padding: 80px 0px;
+  color: white;
+  background-image: url("../img/pattern.png");
+  padding-bottom: 220px;
+}
+.btn{
+ margin-top: 65px;
+ 
+}
+.bttn{
+  margin-top: 65px;
+}
+.hero h1,
+.hero h4{
+font-family: 'Lato',sans-serif;
+}
+@media(max-width:875px){
+ .hero h1,
+ .hero h4{
+  width:90%;
+ } 
+}
+.resume{
+  padding: 20px;
+}
+/********************************
+Main
+*********************************/
+
+.color{
+  color:#2199e8;
+}
+.border{
+  border-left: 5px solid maroon;
+  border-radius: 8px;
+  margin-top: 25px;
+
+}
+.butn{
+  margin-left: 580px;
+  margin-top: 25px;
+}
+.work{
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  color: #3adb76;
+  font-weight: bold;
+}
+.main hr{
+  border:  1px solid gray;
+}
+
+/********************************
+Form details
+*********************************/
+.design{
+  background-image: url("../img/debut_dark.png");
+  color:black;
+
+}
+.design h3{
+  font-family: 'Lato',sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color:#2199e8;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  font-size: 2.5em;
+}
+.forms{
+  margin-top: 40px;
+}
+.design hr{
+  border:1px solid gray;
+}
+.tabs a{
+  font-size: 1.1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color:#2199e8;
+}
+.tabs a:hover{
+   color:#2B2B2B;
+}
+ .finish a{
+  color: #3adb76;
+  text-transform: uppercase;
+  font-family: 'Ubuntu',sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 0.2em;
+}
+
+/********************************
+Footer
+*********************************/
+.footer{
+ background-image: url("../img/gray_jean.png");
+ background-color: black;
+ padding:80px 0px;
+
+}
+.footer h4{
+  color:#2199e8 ;
+}
+.footer a{
+  display: block;
+  color: rgba(0,0,0,0.7);
+  font-weight: bold;
+}
+.footer a:hover{
+  display: block;
+  color: #3adb76;
+}
+.footer hr{
+  border: 1px solid gray;
+  margin:10px 0px;
+} 
+.footer a span{
+  font-weight: bold;
+  color: black;
+}
+.copy{
+  padding: 15px;
+  color:white;
+}
+.not-active {
+   pointer-events: none;
+   cursor: default;
+   color: white;
+}
+
+@media all and (max-width:960px) and (min-width:200px){
+.butn{
+  margin-left: 25px;
+}
+
+}
+@media all and (max-width:369px) and (min-width:200px){
+
+ .btn{
+  margin-left: 15px;
+  margin-top: 15px;
+ }
+ .bttn{
+  margin-top: 20px;
+  margin-left: 35px;
+ }
+}
